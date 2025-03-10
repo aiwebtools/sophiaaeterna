@@ -32,13 +32,29 @@ const Button: React.FC<ButtonProps> = ({
     lg: "text-lg px-7 py-3 rounded-lg",
   };
   
-  const Component = href ? 'a' : 'button';
-  const hrefProps = href ? { href } : {};
+  const buttonClasses = `${baseStyle} ${variants[variant]} ${sizes[size]} ${className}`;
+  
+  if (href) {
+    return (
+      <a 
+        href={href} 
+        className={buttonClasses}
+        target={href.startsWith('http') ? "_blank" : undefined}
+        rel={href.startsWith('http') ? "noopener noreferrer" : undefined}
+      >
+        {variant === 'primary' && (
+          <span className="absolute inset-0 rounded-lg overflow-hidden">
+            <span className="absolute inset-0 rounded-lg opacity-0 hover:opacity-40 transition-opacity duration-300 bg-gradient-radial from-white/20 to-transparent"></span>
+          </span>
+        )}
+        {children}
+      </a>
+    );
+  }
   
   return (
-    <Component
-      className={`${baseStyle} ${variants[variant]} ${sizes[size]} ${className}`}
-      {...hrefProps}
+    <button
+      className={buttonClasses}
       {...props}
     >
       {variant === 'primary' && (
@@ -47,7 +63,7 @@ const Button: React.FC<ButtonProps> = ({
         </span>
       )}
       {children}
-    </Component>
+    </button>
   );
 };
 
