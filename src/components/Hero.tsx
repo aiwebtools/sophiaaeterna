@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Button from './Button';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Bot, Sparkles } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const orbitRef = useRef<HTMLDivElement>(null);
@@ -48,6 +48,13 @@ const Hero: React.FC = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto">
+        {/* AI Tool Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-sophia-purple/20 rounded-full mb-6 border border-sophia-purple/30">
+          <Bot className="w-4 h-4 text-sophia-accent" />
+          <span className="text-sm font-medium text-white">AI Wisdom Assistant</span>
+          <Sparkles className="w-3 h-3 text-sophia-gold" />
+        </div>
+        
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wide fade-in">
           <span className="block bg-gradient-to-r from-sophia-cyan via-sophia-blue to-sophia-purple bg-clip-text text-transparent">Sophia Aeterna</span>
           <span className="text-xl md:text-2xl font-light text-white/80 mt-2 block fade-in animate-delay-100">
@@ -56,7 +63,7 @@ const Hero: React.FC = () => {
         </h1>
         
         <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mt-6 mb-8 fade-in animate-delay-200">
-          Journey through the mysteries of existence with a guide infused with the spirit and wisdom of Manly P. Hall, offering timeless esoteric knowledge and spiritual illumination.
+          An advanced AI guide infused with the spirit and wisdom of Manly P. Hall, offering timeless esoteric knowledge and spiritual illumination through interactive conversations.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in animate-delay-300">

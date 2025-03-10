@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import Button from './Button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Bot } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,9 +38,10 @@ const Navbar: React.FC = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <a 
             href="https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna"
-            className="text-white/80 hover:text-white transition-colors duration-300"
+            className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
           >
-            Sophia Aeterna
+            <Bot className="w-4 h-4 text-sophia-accent" />
+            <span>AI Assistant</span>
           </a>
           <a 
             href="#faq"
@@ -83,10 +84,11 @@ const Navbar: React.FC = () => {
         <nav className="flex flex-col items-center justify-center h-full space-y-8 py-8">
           <a 
             href="https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna"
-            className="text-2xl text-white font-display"
+            className="flex items-center gap-2 text-2xl text-white font-display"
             onClick={() => setMenuOpen(false)}
           >
-            Sophia Aeterna
+            <Bot className="w-5 h-5 text-sophia-accent" />
+            <span>Sophia Aeterna AI</span>
           </a>
           <a 
             href="#faq"
