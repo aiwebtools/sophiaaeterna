@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
           >
             <Bot className="w-4 h-4 text-sophia-accent" />
-            <span>AI Assistant</span>
+            <span>SOPHIA AETERNA AI</span>
           </a>
           <a 
             href="#faq"
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
             onClick={() => setMenuOpen(false)}
           >
             <Bot className="w-5 h-5 text-sophia-accent" />
-            <span>Sophia Aeterna AI</span>
+            <span>SOPHIA AETERNA AI</span>
           </a>
           <a 
             href="#faq"
