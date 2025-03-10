@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Shield } from 'lucide-react';
 import Button from './Button';
 import { useToast } from '@/hooks/use-toast';
@@ -24,16 +24,16 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAccept }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
-      <div className="w-full max-w-md p-6 mx-4 glass-panel border border-sophia-purple/30 rounded-xl shadow-xl animate-fade-in">
+      <div className="w-full max-w-md p-6 mx-4 bg-sophia-darker border border-sophia-purple/30 rounded-xl shadow-xl animate-fade-in">
         <div className="mb-4 flex items-center">
           <div className="mr-3 w-10 h-10 bg-sophia-purple/20 rounded-full flex items-center justify-center">
             <Shield className="w-5 h-5 text-sophia-purple" />
           </div>
-          <h2 className="text-xl font-display text-white">Terms of Use</h2>
+          <h2 className="text-xl font-display text-sophia-gold">Terms of Use</h2>
         </div>
         
-        <div className="space-y-4 text-white/80 text-sm mb-6 max-h-60 overflow-y-auto pr-2">
-          <p>
+        <div className="space-y-4 text-white text-sm mb-6 max-h-60 overflow-y-auto pr-2">
+          <p className="font-medium">
             By accessing and using Sophia Aeterna, you acknowledge and agree to the following:
           </p>
           
@@ -52,9 +52,9 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ onAccept }) => {
         
         <div className="flex justify-center">
           <Button 
-            variant="primary" 
+            variant="secondary" 
             size="md" 
-            className="min-w-[150px] cyberpunk-glow"
+            className="min-w-[150px] font-bold"
             onClick={handleAccept}
           >
             I AGREE
