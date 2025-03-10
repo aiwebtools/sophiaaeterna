@@ -27,6 +27,15 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  // Function to scroll to FAQ section
+  const scrollToFAQ = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const faqSection = document.getElementById('faq');
+    if (faqSection) {
+      faqSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10 px-4 overflow-hidden">
       {/* 3D Orbit Element */}
@@ -85,7 +94,10 @@ const Hero: React.FC = () => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer fade-in animate-delay-500">
+      <div 
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer fade-in animate-delay-500"
+        onClick={scrollToFAQ}
+      >
         <span className="text-white/60 text-sm mb-2">Explore</span>
         <ChevronDown className="w-6 h-6 text-sophia-accent animate-bounce" />
       </div>
