@@ -11,7 +11,7 @@ const FeatureCard: React.FC<{
     <div className="mb-4 flex items-center justify-center w-12 h-12 bg-gradient-to-br from-sophia-purple to-sophia-blue rounded-lg group-hover:scale-110 transition-transform duration-300">
       {icon}
     </div>
-    <h3 className="text-xl font-display mb-3 text-white group-hover:text-gradient transition-all duration-300">{title}</h3>
+    <h3 className="text-xl font-display mb-3 text-white group-hover:text-sophia-cyan transition-all duration-300">{title}</h3>
     <p className="text-white/70">{description}</p>
   </div>
 );
@@ -27,7 +27,7 @@ const About: React.FC = () => {
             Ancient Wisdom Reimagined
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6">
-            The <span className="text-gradient">Eternal Guide</span> to Esoteric Knowledge
+            The <span className="bg-gradient-to-r from-sophia-cyan via-sophia-blue to-sophia-purple bg-clip-text text-transparent">Eternal Guide</span> to Esoteric Knowledge
           </h2>
           <p className="text-lg text-white/80 max-w-3xl mx-auto">
             Sophia Aeterna embodies the timeless wisdom of Manly P. Hall, guiding seekers through the mystical landscape of esoteric philosophy, symbolism, and spiritual growth.
@@ -72,7 +72,7 @@ const About: React.FC = () => {
             href="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-vintage-style-illustration-of-a-golden_kNEfX.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block max-w-xl mx-auto cyberpunk-border-gold group"
+            className="inline-block max-w-xl mx-auto border border-sophia-blue/30 rounded-xl group relative overflow-hidden"
           >
             <div className="overflow-hidden rounded-xl">
               <img 
@@ -83,7 +83,7 @@ const About: React.FC = () => {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-xl opacity-0 group-hover:opacity-100 flex items-end justify-center pb-8 transition-opacity duration-300">
-              <span className="font-display text-2xl text-sophia-gold">Explore the Symbolism</span>
+              <span className="font-display text-2xl text-sophia-cyan">Explore the Symbolism</span>
             </div>
           </a>
         </div>

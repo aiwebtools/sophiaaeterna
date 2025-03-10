@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wide fade-in">
-          <span className="block text-gradient">Sophia Aeterna</span>
+          <span className="block bg-gradient-to-r from-sophia-cyan via-sophia-blue to-sophia-purple bg-clip-text text-transparent">Sophia Aeterna</span>
           <span className="text-xl md:text-2xl font-light text-white/80 mt-2 block fade-in animate-delay-100">
             Illuminating the Path to Eternal Wisdom
           </span>

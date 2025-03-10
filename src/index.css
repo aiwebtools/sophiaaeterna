@@ -41,7 +41,7 @@
 
 @layer base {
   * {
-    @apply border-border selection:bg-sophia-accent/20 selection:text-sophia-amber;
+    @apply border-border selection:bg-sophia-accent/20 selection:text-sophia-cyan;
   }
   
   html {
@@ -65,7 +65,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-sophia-gold via-sophia-amber to-sophia-gold bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-sophia-cyan via-sophia-blue to-sophia-purple bg-clip-text text-transparent;
   }
   
   .glass-panel {
@@ -88,7 +88,7 @@
 
   .cyberpunk-border-gold::before {
     content: '';
-    @apply absolute inset-0 p-[1px] bg-gradient-to-r from-sophia-gold via-sophia-amber to-sophia-gold rounded-xl -z-10;
+    @apply absolute inset-0 p-[1px] bg-gradient-to-r from-sophia-cyan via-sophia-blue to-sophia-purple rounded-xl -z-10;
     filter: blur(1px);
   }
   
