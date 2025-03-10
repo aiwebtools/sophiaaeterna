@@ -7,6 +7,9 @@ import { Menu, X, Bot } from 'lucide-react';
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  // Define the Sophia AI URL as a constant to ensure consistency
+  const sophiaAiUrl = "https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,12 +35,12 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Logo onClick={() => window.location.href = 'https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna'} />
+        <Logo onClick={() => window.location.href = sophiaAiUrl} />
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <a 
-            href="https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna"
+            href={sophiaAiUrl}
             className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300"
           >
             <Bot className="w-4 h-4 text-sophia-accent" />
@@ -83,7 +86,7 @@ const Navbar: React.FC = () => {
       >
         <nav className="flex flex-col items-center justify-center h-full space-y-8 py-8">
           <a 
-            href="https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna"
+            href={sophiaAiUrl}
             className="flex items-center gap-2 text-2xl text-white font-display"
             onClick={() => setMenuOpen(false)}
           >
