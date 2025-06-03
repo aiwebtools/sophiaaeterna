@@ -38,6 +38,13 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10 px-4 overflow-hidden">
+      {/* SEO-friendly hidden content */}
+      <div className="sr-only">
+        <h1>Free AI Tools - Sophia Aeterna AI Wisdom Guide by AIWEBTOOLS.AI</h1>
+        <p>Discover the best free AI tools for spiritual guidance and wisdom. Sophia Aeterna is an advanced AI chatbot and wisdom guide offering esoteric knowledge, philosophical insights, and spiritual mentorship. Created by AI Web Tools LLC (AIWEBTOOLS.AI), this free AI assistant provides access to ancient wisdom traditions, Manly P. Hall teachings, and mystical philosophy. Perfect for spiritual seekers, philosophy students, and anyone interested in free online AI tools for personal growth and enlightenment.</p>
+        <p>Keywords: AI tools, free AI tools, AI web tools, AIWEBTOOLS.AI, artificial intelligence, AI chatbot, wisdom AI, spiritual AI, philosophy AI, free AI assistant, best AI tools, AI applications, online AI tools</p>
+      </div>
+
       {/* 3D Orbit Element */}
       <div 
         ref={orbitRef}
@@ -60,19 +67,19 @@ const Hero: React.FC = () => {
         {/* AI Tool Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-sophia-purple/20 rounded-full mb-6 border border-sophia-purple/30">
           <Bot className="w-4 h-4 text-sophia-accent" />
-          <span className="text-sm font-medium text-white">AI Wisdom Assistant</span>
+          <span className="text-sm font-medium text-white">Free AI Wisdom Assistant by AIWEBTOOLS.AI</span>
           <Sparkles className="w-3 h-3 text-sophia-gold" />
         </div>
         
-        <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wide fade-in">
+        <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-wide fade-in">
           <span className="block bg-gradient-to-r from-sophia-cyan via-sophia-blue to-sophia-purple bg-clip-text text-transparent">Sophia Aeterna</span>
           <span className="text-xl md:text-2xl font-light text-white/80 mt-2 block fade-in animate-delay-100">
             Illuminating the Path to Eternal Wisdom
           </span>
-        </h1>
+        </h2>
         
         <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mt-6 mb-8 fade-in animate-delay-200">
-          An advanced AI guide infused with the spirit and wisdom of Manly P. Hall, offering timeless esoteric knowledge and spiritual illumination through interactive conversations.
+          An advanced free AI guide infused with the spirit and wisdom of Manly P. Hall, offering timeless esoteric knowledge and spiritual illumination through interactive conversations. Discover the power of AI tools for spiritual growth.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in animate-delay-300">

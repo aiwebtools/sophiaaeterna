@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://sophia-aeterna.lovable.app/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sophia-aeterna.lovable.app/og-image.png</image:loc>
+      <image:title>Sophia Aeterna AI - Free AI Wisdom Guide</image:title>
+      <image:caption>Free AI tools for spiritual guidance and wisdom by AIWEBTOOLS.AI</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sophia-aeterna.lovable.app/#about</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sophia-aeterna.lovable.app/#faq</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sophia-aeterna.lovable.app/#disclaimer</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

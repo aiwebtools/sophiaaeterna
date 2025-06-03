@@ -1,0 +1,14 @@
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sophia-aeterna.lovable.app/sitemap.xml
+
+# AI Tools and Free AI Tools pages
+Allow: /#about
+Allow: /#faq
+Allow: /#disclaimer
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
