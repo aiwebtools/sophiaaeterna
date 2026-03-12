@@ -4,11 +4,13 @@ import Logo from './Logo';
 import Button from './Button';
 import { Phone, Mail, ExternalLink } from 'lucide-react';
 
+const aiToolsUrl = "https://aiwebtools.lovable.app/?via=aiwebtools";
+
 const Footer: React.FC = () => {
   return (
     <footer className="relative bg-sophia-darker pt-16 border-t border-sophia-purple/20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Column 1 - Logo and Description */}
           <div>
             <Logo onClick={() => window.location.href = 'https://chatgpt.com/g/g-678afd9be6348191a641478dbee7a8a1-sophia-aeterna'} />
@@ -47,7 +49,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="https://www.aiwebtools.ai"
+                  href={aiToolsUrl}
                   className="text-white/70 hover:text-sophia-gold transition-colors duration-300 flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -74,7 +76,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="https://aiwebtools.ai/terms-of-services"
+                  href="https://aiwebtools.lovable.app/terms-of-services"
                   className="text-white/70 hover:text-sophia-gold transition-colors duration-300 flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -94,7 +96,7 @@ const Footer: React.FC = () => {
                   href="tel:+14758008096"
                   className="text-white/70 hover:text-sophia-gold transition-colors duration-300 flex items-center"
                 >
-                  <Phone className="w-4 h-4 mr-2" />
+                  <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
                   (475) 800-8096
                 </a>
               </li>
@@ -103,8 +105,8 @@ const Footer: React.FC = () => {
                   href="mailto:Contact@ai-webtools.com"
                   className="text-white/70 hover:text-sophia-gold transition-colors duration-300 flex items-center"
                 >
-                  <Mail className="w-4 h-4 mr-2" />
-                  Contact@ai-webtools.com
+                  <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
+                  <span className="break-all">Contact@ai-webtools.com</span>
                 </a>
               </li>
             </ul>
@@ -112,9 +114,9 @@ const Footer: React.FC = () => {
         </div>
 
         {/* More AI Tools Button (Oval Shaped) */}
-        <div className="absolute -top-6 right-6 md:right-12">
+        <div className="absolute -top-6 right-4 md:right-12">
           <Button 
-            href="https://www.aiwebtools.ai"
+            href={aiToolsUrl}
             className="rounded-full shadow-lg px-6"
             variant="primary"
           >
@@ -125,7 +127,7 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="border-t border-sophia-purple/20 py-6 mt-8 text-center text-white/60 text-sm">
           <a 
-            href="https://www.aiwebtools.ai"
+            href={aiToolsUrl}
             className="hover:text-sophia-gold transition-colors duration-300"
             target="_blank"
             rel="noopener noreferrer"
